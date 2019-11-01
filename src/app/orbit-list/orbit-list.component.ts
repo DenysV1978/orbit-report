@@ -9,6 +9,7 @@ import { Satellite } from '../satellite';
 })
 export class OrbitListComponent implements OnInit {
   @Input() satellites: Satellite[];
+  should: boolean;
 
   constructor() { }
 
@@ -26,6 +27,7 @@ export class OrbitListComponent implements OnInit {
        return 0;
     });
  };
+
 
 }
 
