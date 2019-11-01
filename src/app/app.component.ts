@@ -7,7 +7,7 @@ import { Satellite } from './satellite';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'orbit-report';
+  title = 'Orbit Report';
   sourceList: Satellite[];
   displayList: Satellite[];
 
@@ -34,6 +34,7 @@ export class AppComponent {
   for(let i=0; i < this.sourceList.length; i++) {
      let name = this.sourceList[i].name.toLowerCase();
      if (name.indexOf(searchTerm) >= 0) {
+        console.log(name.indexOf(searchTerm))
         matchingSatellites.push(this.sourceList[i]);
      }
   }
